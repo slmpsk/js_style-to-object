@@ -14,10 +14,10 @@ function convertToObject(sourceString) {
   const resultArray = {};
 
   for (const elem of newArray) {
-    if (elem[0] !== '' && elem[1] !== '') {
-      const key = elem[0].trim();
-      const value = elem[1].trim();
+    const key = elem[0].trim();
+    const value = elem[1].trim();
 
+    if (elem[0] !== '' && elem[1] !== '') {
       resultArray[key] = value;
     }
   }
